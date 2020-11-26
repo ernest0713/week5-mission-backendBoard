@@ -1,0 +1,172 @@
+---
+title: The Backend Board
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="container p-5">
+    <div class="d-flex justify-content-between mb-6">
+        <div class="d-flex">
+            <h2 class="pageTitle mr-6">Assignment</h2>
+            <div class="form-group">
+                <select class="form-control  border-0">
+                  <option selected>All Courses</option>
+                  <option>Course 1</option>
+                  <option>Course 2</option>
+                  <option>Course 3</option>
+                  <option>Course 4</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="text-dark mr-5">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="text-dark">
+                <i class="fas fa-bell"></i>
+            </a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="form-group">
+            <select class="form-control  border-0">
+              <option selected>All(4)</option>
+              <option>Please check this file…</option>
+              <option>My Homework</option>
+              <option>Have a problem with this…</option>
+              <option>Did I do it right?</option>
+            </select>
+        </div>
+        <div>
+            2 comments
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <ul class="list-group list-unstyled">
+                <li>
+                    <a href="#" class="list-group-item list-group-item-action bg-primary">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <small>Chapter Assignment 2</small>
+                                <h5>Please check this file…</h5>
+                            </div>
+                            <div>
+                                <p class="text-right mb-0">4 hrs ago</p>
+                                <p class="mb-0">Emily Wang</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <small>Chapter Assignment 1</small>
+                                <h5>My Homework</h5>
+                            </div>
+                            <div>
+                                <p class="text-right mb-0">12 hrs ago</p>
+                                <p class="text-right mb-0">David Xu</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <small>Final Assignment</small>
+                                <h5>Have a problem with this…</h5>
+                            </div>
+                            <div>
+                                <p class="text-right mb-0">18 hrs ago</p>
+                                <p class="text-right mb-0">Tony Wei</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <small>Final Assignment</small>
+                                <h5>Did I do it right?</h5>
+                            </div>
+                            <div>
+                                <p class="text-right mb-0">19 hrs ago</p>
+                                <p class="text-right mb-0">Christina Lin</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+              </ul>
+        </div>
+        <div class="col-7 posRel">
+            <div class="card mb-3">
+                <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+                    <div>
+                        <small>Chapter Assignment 2 / HTML&CSS</small>
+                        <h5>Please check this file for me, thanks!</h5>
+                    </div>
+                    <div>
+                        <a href="#" class="text-dark">
+                            <span class="material-icons">
+                                more_vert
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="media">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true" class="mr-3 rounded-circle" width="40" height="40">
+                        <div class="media-body border-bottom pb-3">
+                          <h5 class="mt-0">Media heading</h5>
+                          <small class="text-black-50">10:38 AM (4 hours ago)</small>  
+                          <p class="my-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                              <span class="bg-primary text-secondary">div</span> is bigger than the height of the 
+                              <span class="bg-primary text-secondary">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                          <a href="#" class="btn btn-primary rounded-0"><i class="fas fa-paperclip mr-2"></i>HW-2-David.zip</a>
+                        </div>
+                    </div>
+                    <div class="media py-3">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" class="mr-3 rounded-circle" width="40" height="40">
+                        <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="mt-0">Andy Chen (You)</h5>
+                                    <samll class="text-black-50">13:24 AM (1 hours ago)</samll>
+                                </div>
+                                <div>
+                                    <a href="#" class="mr-3 text-dark"><i class="far fa-star"></i></a>
+                                    <a href="#" class="text-dark"><i class="fas fa-pen"></i></a>
+                                </div>
+                            </div>
+                          <p>Hi David, by default, an image is rendered inline, 
+                              like a letter so it sits on the same line that a, b, c and d sit on. 
+                              There is space below that line for the descenders 
+                              you find on letters like g, j, p and q. 
+                              <p>You can:</p>
+                              <ul>
+                                  <li>adjust the <span class="bg-primary text-secondary">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="bg-primary text-secondary">middle</span> )</li>
+                                  <li>change the <span class="bg-primary text-secondary">display</span> so it isn’t inline.</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <a href="#" class="text-dark mr-4"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="text-dark "><i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-outline-secondary mr-3">Mark as read</a>
+                    <a href="#" class="btn btn-secondary">Reply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>

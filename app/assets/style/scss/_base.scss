@@ -1,0 +1,32 @@
+i{
+    width: 20px;
+    height: 20px;
+}
+
+.posRel{
+    position: relative;
+}
+
+
+.head{
+    width: 40px;
+    height: 40px;
+    .headImg{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.pageTitle{
+    font-size: 24px;
+    line-height: 32px;
+    .pageSubTitle{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.checked{
+    border: none;
+    background: $primary;
+}
